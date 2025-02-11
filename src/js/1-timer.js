@@ -10,6 +10,8 @@ import "izitoast/dist/css/iziToast.min.css";
 
 let userSelectedDate = null;
 const startBtn = document.querySelector('[data-start]');
+const date = document.querySelector('.inp_datetime')
+startBtn.disabled = true;
 
 const options = {
   enableTime: true,
@@ -27,7 +29,6 @@ const options = {
           messageColor: 'white',
           message: 'Please choose a date in the future',
         });
-        startBtn.disabled = true;
         userSelectedDate = null;
       } else {
         userSelectedDate = selectDate;
@@ -56,13 +57,16 @@ const timer = {
     if (ms <= 0) {
       clearInterval(this.intervalId);
       timerDate({ days: "00", hours: "00", minutes: "00", seconds: "00" });
+      date.disabled = false;
       return;
     }
   },
   }
 
 startBtn.addEventListener('click', () => {
+  
   timer.start();
+  date.disabled = true;
   startBtn.disabled = true;
 });
 
