@@ -27,10 +27,12 @@ form.addEventListener('submit', (eve) => {
 
     promise.then((result) => {
         iziToast.success({
+            position: "topRight",
             message: `Fulfilled promise in ${result}ms`,
         });
     }).catch((err) => {
         iziToast.error({
+            position: "topRight",
             message: `Rejected promise in ${err}ms`,
         });
     });
