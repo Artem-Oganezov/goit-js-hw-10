@@ -5,13 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-B5Qt9EMX.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-B1OOefyK.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-A92OCY9B.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-C1W12L1m.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CUZofXIC.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
       <p>Welcome to page 3</p>
     </section>
+
+    <form class="form">
+      <label class="label_delay">
+        Delay (ms)
+        <input class="input_delay" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="fieldset_radio">
+        <legend class="state">State</legend>
+        <label class="label_radio">
+          <input
+            class="input_radio"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label class="label_radio">
+          <input
+            class="input_radio"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="btn_create" type="submit">Create notification</button>
+    </form>
 
   </body>
 </html>

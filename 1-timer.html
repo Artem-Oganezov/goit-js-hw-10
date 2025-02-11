@@ -5,13 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-B5Qt9EMX.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/goit-js-hw-10/1-timer.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-B1OOefyK.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-A92OCY9B.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-C1W12L1m.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CUZofXIC.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
       <p>Welcome to page 2</p>
     </section>
+
+    <div class="data_time">
+      <input class="inp_datetime" type="text" id="datetime-picker" />
+      <button class="btn_start" type="button" data-start>Start</button>
+    </div>
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
 
   </body>
 </html>
